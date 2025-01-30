@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif ;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    background: #f0f2f5;
+    padding: 0 15px;
+}
+
+.facebook-page .text{
+    margin-bottom:90px;
+}
+
+.facebook-page{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.facebook-page h1 {
+   font-size: 5rem;
+   color: #1877f2;
+   margin-bottom: 10px;
+
+}
+.facebook-page p {
+    font-size: 1.75rem
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width:400px;
+    width:100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0. 0.1);
+
+}
+
+form input {
+    height: 55px;
+    width:100%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom:  15px;
+}
+
+
+font input:focus{
+    outline: none ;
+    border-color: #1877f2;
+}
+
+::placeholder{
+    color: #777;
+    font-size: 1.063rem;
+}
+
+.login-link{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.login-link .login-btn{
+    padding : 15px 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #1877f2;
+    border-radius: 6px;
+    color: #fff;
+    cursor:pointer;
+    transition: 0.2s ease;
+}
+
+.login-link .login-btn:hover{
+    background: #0d65d9;
+}
+
+form a {
+    text-decoration: none;
+}
+
+.login-link .forgot-password{
+    color : #1877f2;
+    font-size: 0.875rem;
+}
+
+.login-link .forgot-password:hover{
+    text-decoration: underline;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 20px;
+    margin-top:20px;
+
+}
+
+.create-account{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 15px;  
+}
+
+.create-account a{
+    padding : 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.create-account a:hover{
+    background: #3ba626;
+}
+
+@media(max-width:900px){
+    .facebook-page{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.facebook-page{
+    margin-bottom: 30px;
+}
+
+.footer-hr{
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 850px;
+    height: 2px;
+}
+.footer_languages {
+    margin-left: 250px;
+    margin-right: 137px;
+    display: flex;
+    margin-bottom:0;
+    flex-direction: row;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    color: #737373;
+}
+
+.lang {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+    list-style-type: none;
+ }
+ .button-plus{
+    width: 25px;
+    height: 20px;
+ }
+
+.list-href {
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    margin-left: 250px;
+    margin-right: 461.3px;
+    color: #737373;
+    margin-top: 0;
+}
+
+.href {
+    font-size: 12px;
+    margin: 4px;
+    line-height: 1;
+    list-style-type: none;
+}
+
+.footer_facebook {
+    display: flex;
+    margin-left: 255px;    
+    padding-top: 20px;
+    color: #737373;
+    font-size: 12px;
+}   
