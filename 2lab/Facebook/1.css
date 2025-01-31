@@ -145,6 +145,27 @@ hr{
     }
 }
 
+.right-p p {
+    padding-right: 300px;
+    margin-top: 20px;
+    color: #1c1e21;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: normal;
+    position: absolute;
+}
+
+.right-p span {
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.right-p span:hover {
+    text-decoration: underline;
+}
+
 .facebook-page{
     margin-bottom: 30px;
 }
