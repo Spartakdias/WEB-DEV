@@ -1,0 +1,67 @@
+if ("0") {
+    alert( 'Hello' );
+  }
+
+<!--Yes , it will-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+
+    let value = prompt('What is the "official" name of JavaScript?', '');
+
+    if (value == 'ECMAScript') {
+      alert('Right!');
+    } else {
+      alert("You don't know? ECMAScript!");
+    }
+  </script>
+
+
+</body>
+
+</html>
+
+
+
+<!--
+Using if..else, write the code which gets a number via prompt and then shows in alert:
+
+1, if the value is greater than zero,
+-1, if less than zero,
+0, if equals zero.
+In this task we assume that the input is always a number.
+-->
+
+let value = prompt('Type a number', 0);
+
+if (value > 0) {
+  alert( 1 );
+} else if (value < 0) {
+  alert( -1 );
+} else {
+  alert( 0 );
+}
+
+
+
+
+let result;
+
+if (a + b < 4) {
+  result = 'Below';
+} else {
+  result = 'Over';
+}
+
+let result = (a + b < 4) ? 'Below' : 'Over';
+
+
+
+let message = (login == 'Employee') ? 'Hello' :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
