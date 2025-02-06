@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container{
+    padding: 0px 40px;
+}
+
+header{
+    padding: 20px 0;
+    background: #ffff;
+    width: 100%;
+    align-items: center;
+}
+
+.header-holder{
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+.dark-check{
+    align-items: center;
+    display: flex;
+}
+.dark-check p{
+    padding: 0px 10px;
+}
+.dark-check input{
+    width: 20px;
+    height: 20px;
+}
+
+
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content button{
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #0866ff;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+
+#main{
+    background: #f2f4f7;
+    height: 100vh;
+    padding-top: 25px;
+}
+
+#content input{
+    border-radius: 5px;
+    border: 1px solid #c9ccd1;
+    outline: none;
+    padding: 10px;
+    width: 80%;
+}
+
+.div-holder{
+    width: 40%;
+    height: 30%;
+    border: 1px solid #c9ccd1;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    background: #fff;
+
+}
+
+.listOfLi{
+    text-decoration: none;
+    width: 80%;
+    align-items: center;
+    text-align: start;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.listOfLi li{
+    padding: 20px;
+    list-style: none;
+    border: 1px solid #c9ccd1;
+    border-radius: 10px;
+    margin: 20px 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.filterBtn{
+    margin-bottom: 20px;
+}
+
