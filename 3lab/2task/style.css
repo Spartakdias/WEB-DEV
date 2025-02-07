@@ -24,12 +24,12 @@ header{
 }
 
 
-
 #content{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #content button{
     border-radius: 20px;
     border: none;
@@ -44,7 +44,7 @@ header{
 #main{
     background: #f2f4f7;
     height: 100vh;
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 #content input{
