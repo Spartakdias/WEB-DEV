@@ -7,12 +7,6 @@ clickbutton.addEventListener('click', () => {
     addTask();
 });
 
-const state = {
-    notes: [
-        {text: '', status: true},
-    ],
-    filters: 'all'
-};
 
 input.addEventListener('keydown', (ev) => {
     if (ev.key === 'Enter') {
