@@ -22,17 +22,7 @@ header{
     justify-content: space-between;
     display: flex;
 }
-.dark-check{
-    align-items: center;
-    display: flex;
-}
-.dark-check p{
-    padding: 0px 10px;
-}
-.dark-check input{
-    width: 20px;
-    height: 20px;
-}
+
 
 
 #content{
