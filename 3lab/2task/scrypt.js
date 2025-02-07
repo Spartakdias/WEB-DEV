@@ -10,7 +10,6 @@ clickbutton.addEventListener('click', () => {
 
 input.addEventListener('keydown', (ev) => {
     if (ev.key === 'Enter') {
-        ev.preventDefault();
         addTask();
     }
 });
