@@ -1,0 +1,34 @@
+<div class="store">
+  <div class="product-list">
+    <div class="title-block">
+      <h2>Список товаров</h2>
+    </div>
+    <div *ngFor="let product of products" class="product-item">
+      <div class="product-content">
+        
+        <!-- Галерея изображений -->
+        <div class="product-image">
+          <img [src]="product.images[product.currentImageIndex]" alt="{{ product.name }}">
+          <button (click)="prevImage(product)">◀</button>
+          <button (click)="nextImage(product)">▶</button>
+        </div>
+
+        <div class="product-details">
+          <h3>{{ product.name }} <span class="rating">Рейтинг: {{ product.rating }} / 5</span> </h3>
+          <p class="price">{{ product.price | currency:'KZT':'symbol-narrow':'1.0-0' }}</p>
+          <button (click)="toggleDescription(product)">Показать описание</button>
+          <button (click)="shareOnWhatsApp(product.link)" id="ws">Поделиться (WhatsApp)</button>
+          <button (click)="shareOnTelegram(product.link)" id="tg">Поделиться (Telegram)</button>
+          <p class="more-details"><button (click)="redirectToLink(product.link)">Подробнее</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Описание выбранного продукта -->
+  <div class="description-panel" *ngIf="selectedProduct">
+    <button class="close-btn" (click)="closeDescription()">❌</button>
+    <h3>Описание</h3>
+    <p>{{ selectedProduct.description }}</p>
+  </div>
+</div>
