@@ -5,8 +5,6 @@
     </div>
     <div *ngFor="let product of products" class="product-item">
       <div class="product-content">
-        
-        <!-- Галерея изображений -->
         <div class="product-image">
           <img [src]="product.images[product.currentImageIndex]" alt="{{ product.name }}">
           <button (click)="prevImage(product)">◀</button>
@@ -24,8 +22,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Описание выбранного продукта -->
   <div class="description-panel" *ngIf="selectedProduct">
     <button class="close-btn" (click)="closeDescription()">❌</button>
     <h3>Описание</h3>

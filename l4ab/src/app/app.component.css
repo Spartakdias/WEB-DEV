@@ -16,8 +16,7 @@ body {
     margin: 0 auto;
     padding-top: 80px;
   }
-  
-  /* Заголовок */
+
   .title-block {
     width: 100%;
     background-color: gray; 
@@ -33,7 +32,6 @@ body {
     border-bottom: 3px solid gray; 
   }
   
-  /* Список товаров */
   .product-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -42,8 +40,7 @@ body {
     justify-content: center;
     margin-top: 150px;
   }
-  
-  /* Карточка товара */
+
   .product-item {
     background-color: white;
     border-radius: 12px;
@@ -59,8 +56,7 @@ body {
   .product-item:hover {
     transform: translateY(-5px);
   }
-  
-  /* Галерея изображений */
+
   .product-image {
     position: relative;
     width: 300px;
@@ -79,8 +75,7 @@ body {
     object-fit: cover;
     border-radius: 8px;
   }
-  
-  /* Кнопки переключения галереи */
+
   .product-image button {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
@@ -109,7 +104,6 @@ body {
     right: 5px;
   }
   
-  /* Детали товара */
   .product-details {
     text-align: center;
     width: 100%;
@@ -134,7 +128,6 @@ body {
     margin-top: 5px;
   }
   
-  /* Кнопки */
   button {
     cursor: pointer;
     background-color: #0078d4;
@@ -159,8 +152,7 @@ body {
   .more-details button:hover {
     background-color: Gainsboro;
   }
-  
-  /* Кнопки "Поделиться" */
+ 
   #tg {
     background-color: SkyBlue;
     font-size: 12px;
