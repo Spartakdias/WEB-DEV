@@ -1,0 +1,37 @@
+<body>
+    <div class="categories">
+        <div  *ngFor="let category of ProductsList">
+    
+            <button class="categories-button"
+                    [class.selected]="category === selectedCategory" type="button" (click)="onSelect(category)"
+            >
+                <h2 id="categoriesNames">{{ category.category }}</h2>
+            </button>
+        </div>
+        <div class="totalLikes"><h2 class="likesText">My likes: {{totalLikes}}</h2></div>
+    
+    </div>
+    <div *ngIf="selectedCategory">
+        <div class="Items" *ngFor="let productItem of selectedCategory.productItems">
+            <h3><a [href]="productItem.link" [title]="productItem.name + ' details'">{{productItem.name}}</a></h3>
+            <p class="description">Description: {{ productItem.description }}</p>
+            <p>Price: ${{ productItem.price }}</p>
+            <p>Rating: {{ productItem.rating }}</p>
+            <img src="{{ productItem.image }}" alt="{{ productItem.name }}" width="100">
+            <div class="buttons">
+                <button  id="buttonShare" type="button" (click)="share()">
+                    <a id="share" href="https://wa.me/87081196040">
+                        Share
+                    </a>
+                </button>
+                <button id="likesButton" type="button" (click)="likeCount(productItem)">
+                        Like {{productItem.likes}}
+                </button>
+            </div>
+    <!--        <alert [productItem]="selectedCategory" (notify)="onNotify()"></alert>-->
+        </div>
+    </div>
+    </body>
+    
+    
+    

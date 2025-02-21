@@ -1,0 +1,79 @@
+#share {
+    color: white;
+  }
+  #buttonShare{
+    width: 68px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #6f6d68;
+  }
+  
+  #name {
+    margin-top: 15px;
+  }
+  img {
+    width: 355px;
+    border: 1px solid #7b6e54;
+    border-radius: 10px;
+  }
+  
+  .categories {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .description {
+    width: 697px;
+  }
+  
+  
+  a {
+    color: white;
+    font-weight: bolder;
+  }
+  p {
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  #likesButton {
+    margin-left: 10px;
+    background-color: #9d534e;
+    font-weight: 600;
+  }
+  
+  .totalLikes{
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px black solid;
+    padding-left: 10px;
+    width: 125px;
+    background-color: gray;
+  }
+  
+  .likesText{
+    color: white;
+  }
+  .categories-button {
+    margin: 10px;
+    color: black;
+    background-color: gray;
+  }
+  #categoriesNames {
+    color: white;
+    font-size: 22px;
+  }
+  
+  .Items {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: gray;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    align-items: center;
+  }
