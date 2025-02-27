@@ -1,0 +1,17 @@
+.one-block {
+    display: flex;
+    flex-direction: row;
+    height: 26px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  .a {
+    color: #222222;
+  }
+  .button {
+    margin-right: 20px;
+  }
+  

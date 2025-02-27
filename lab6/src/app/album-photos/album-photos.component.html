@@ -1,0 +1,9 @@
+<button class="button" [routerLink]="'/albums'">Вернуться назад</button>
+<div class="block" *ngFor="let photo of data">
+  <p>Photo:</p>
+  <p><img [src]="photo.url" alt="url" width="600" height="600"></p>
+  <p>Mini-photo:</p>
+  <p><img [src]="photo.thumbnailUrl" alt="thumbnailUrl" width="150" height="150"></p>
+
+
+</div>

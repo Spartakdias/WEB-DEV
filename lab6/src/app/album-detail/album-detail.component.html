@@ -1,0 +1,9 @@
+<div *ngIf="data">
+    <p>UserId: {{ data.userId }}</p>
+    <p>ID: {{ data.id }}</p>
+    <p>Title: {{ data.title }}</p>
+    <p><a [routerLink]="'/albums/' + data.id + '/photos'">Photos</a></p>
+    <input class="input-block input" type="text" [(ngModel)]="data.title" placeholder="Новый заголовок">
+    <button  class="input-block" (click)="saveChanges(data)">Сохранить</button>
+    <button class="input-block" [routerLink]="'/albums'">Вернуться назад</button>
+  </div>

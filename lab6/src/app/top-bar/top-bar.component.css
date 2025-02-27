@@ -1,0 +1,10 @@
+.block-top-bar {
+    display: flex;
+    flex-direction: row;
+    border: 4mm ridge black;
+  }
+  
+  .top-bar {
+    margin: 10px;
+    color: #222222;
+  }

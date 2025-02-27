@@ -169,7 +169,7 @@ export interface Product {
               'interfaces: Bluetooth\n' +
               'working time: 3-7 days',
           rating: 3.9,
-          image: "https://resources.cdn-kaspi.kz/img/m/p/hb0/h7e/63639753555998.jpg?format=gallery-medium",
+          image: "https://resources.cdn-kaspi.kz/img/m/p/h7b/hd0/86051008020510.jpg?format=gallery-medium",
           liked: false,
           pressed: false
         },

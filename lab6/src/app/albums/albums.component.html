@@ -1,0 +1,9 @@
+<div *ngFor="let userId of uniqueUserIds">
+    <h2>User ID: {{ userId }}</h2>
+    <div *ngFor="let album of albums" [ngClass]="{ 'one-block':album.userId === userId }">
+      <ng-container *ngIf="album.userId === userId" >
+        <button class="button" (click)="deleteAlbums(album.id)">Удалить</button>
+        <p><a  class="a" [routerLink]="'/albums/' + album.id">Title {{album.title}}</a></p>
+      </ng-container>
+    </div>
+  </div>
