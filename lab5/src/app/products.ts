@@ -9,6 +9,7 @@ export interface Product {
     likes: number;
     liked: boolean;
     pressed: boolean;
+    categories: string;
   }
   export interface ProductList {
     category: string;
@@ -18,6 +19,7 @@ export interface Product {
   export const ProductsList: ProductList[] = [
     { category: "Phones",
       productItems: [ {
+        categories: "phone" ,
         link: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-max-256gb-seryi-113138420/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_common_new&gclid=EAIaIQobChMI057p9LDJhAMV0maRBR3OeAh5EAAYASAAEgIKn_D_BwE',
         id: 1,
         name: 'Apple iPhone 15 Pro Max',
@@ -30,6 +32,7 @@ export interface Product {
         pressed: false
       },
         {
+          categories: 'phone',
           link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-midnight-chernyi-102298404/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_common_new&gclid=EAIaIQobChMI057p9LDJhAMV0maRBR3OeAh5EAAYASAAEgIKn_D_BwE',
           id: 2,
           name: 'Apple iPhone 13',
@@ -42,6 +45,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'phone',
           link: 'https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_common_new&gclid=EAIaIQobChMI057p9LDJhAMV0maRBR3OeAh5EAAYASAAEgIKn_D_BwE',
           id: 3,
           name: 'Apple iPhone 14',
@@ -54,6 +58,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'phone',
           link: 'https://kaspi.kz/shop/p/xiaomi-redmi-12-4g-8-gb-256-gb-chernyi-110918152/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_common_new&gclid=EAIaIQobChMI057p9LDJhAMV0maRBR3OeAh5EAAYASAAEgIKn_D_BwE',
           id: 4,
           name: 'Xiaomi Redmi 12',
@@ -66,6 +71,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'phone',
           link: 'https://kaspi.kz/shop/p/samsung-galaxy-a24-6-gb-128-gb-chernyi-110343531/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_common_new&gclid=EAIaIQobChMI057p9LDJhAMV0maRBR3OeAh5EAAYASAAEgIKn_D_BwE',
           id: 5,
           name: 'Samsung Galaxy A24',
@@ -82,6 +88,7 @@ export interface Product {
   
     { category: "Keyboards",
       productItems:[ {
+        categories: 'Keyboards',
         link: 'https://kaspi.kz/shop/p/t-wolf-tf-800-chernyi-106467552/?c=750000000',
         id: 1,
         likes: 0,
@@ -94,6 +101,7 @@ export interface Product {
         pressed: false
       },
         {
+          categories: 'Keyboards',
           link: 'https://kaspi.kz/shop/p/leaven-k620-chernyi-106785769/?c=750000000',
           id: 2,
           likes: 0,
@@ -106,6 +114,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'Keyboards',
           link: 'https://kaspi.kz/shop/p/akko-3061-world-tour-tokyo-r2-v3-cream-yellow-rozovyi-112789833/?c=750000000',
           id: 3,
           likes: 0,
@@ -118,6 +127,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'Keyboards',
           link: 'https://kaspi.kz/shop/p/crown-cmkg-403-chernyi-9200416/?c=750000000',
           id: 4,
           likes: 0,
@@ -130,6 +140,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'Keyboards',
           link: 'https://kaspi.kz/shop/p/akko-3061-world-tour-tokyo-r2-v3-cream-yellow-rozovyi-112789833/?c=750000000',
           id: 5,
           likes: 0,
@@ -146,6 +157,7 @@ export interface Product {
   
     { category: "Smartwatches",
       productItems:[ {
+        categories: 'Watches',
         link: 'https://kaspi.kz/shop/p/apple-watch-se-40-mm-chernyi-100568123/?c=750000000',
         id: 1,
         likes: 0,
@@ -158,6 +170,8 @@ export interface Product {
         pressed: false
       },
         {
+
+          categories: 'Watches',
           link: 'https://kaspi.kz/shop/p/colmi-p28-plus-chernyi-106096505/?c=750000000',
           id: 2,
           likes: 0,
@@ -174,6 +188,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'Watches',
           link: 'https://kaspi.kz/shop/p/samsung-galaxy-watch-4-classic-sm-r890nzkacis-46-mm-chernyi-chernyi-102170938/?c=750000000',
           id: 3,
           likes: 0,
@@ -188,6 +203,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'Watches',
           link: 'https://kaspi.kz/shop/p/huawei-watch-gt-4-46-mm-serebristyi-chernyi-113401540/?c=750000000',
           id: 4,
           likes: 0,
@@ -205,6 +221,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'Watches',
           link: 'https://kaspi.kz/shop/p/yunteko-dks10-chernyi-chernyi-110650648/?c=750000000',
           id: 5,
           likes: 0,
@@ -221,6 +238,7 @@ export interface Product {
   
     { category: "headphones",
       productItems:[ {
+        categories: 'headphones',
         link: 'https://kaspi.kz/shop/p/apple-airpods-pro-2nd-generation-with-wireless-magsafe-charging-case-belyi-113677582/?c=750000000',
         id: 1,
         likes: 0,
@@ -239,6 +257,7 @@ export interface Product {
         pressed: false
       },
         {
+          categories: 'headphones',
           link: 'https://kaspi.kz/shop/p/tws-f9-5-chernye-101769530/?c=750000000',
           id: 2,
           likes: 0,
@@ -251,6 +270,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'headphones',
           link: 'https://kaspi.kz/shop/p/marshall-major-iv-chernyi-102138144/?c=750000000',
           id: 3,
           likes: 0,
@@ -263,6 +283,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'headphones',
           link: 'https://kaspi.kz/shop/p/samsung-galaxy-buds2-pro-sm-r510nzaacis-chernyi-106128763/?c=750000000',
           id: 4,
           likes: 0,
@@ -275,6 +296,7 @@ export interface Product {
           pressed: false
         },
         {
+          categories: 'headphones',
           link: 'https://kaspi.kz/shop/p/jbl-tune-510bt-chernyi-101420081/?c=750000000',
           id: 5,
           likes: 0,

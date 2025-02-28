@@ -15,12 +15,13 @@
         <div class="Items" *ngFor="let productItem of selectedCategory.productItems">
             <h3><a [href]="productItem.link" [title]="productItem.name + ' details'">{{productItem.name}}</a></h3>
             <p class="description">Description: {{ productItem.description }}</p>
+            <p class="categories">categories : {{ productItem.categories}}</p>
             <p>Price: ${{ productItem.price }}</p>
             <p>Rating: {{ productItem.rating }}</p>
             <img src="{{ productItem.image }}" alt="{{ productItem.name }}" width="100">
             <div class="buttons">
                 <button  id="buttonShare" type="button" (click)="share()">
-                    <a id="share" href="https://wa.me/87081196040">
+                    <a id="share" href="https://whatsapp.com/dl/">
                         Share
                     </a>
                 </button>
@@ -28,7 +29,7 @@
                         Like {{productItem.likes}}
                 </button>
             </div>
-    <!--        <alert [productItem]="selectedCategory" (notify)="onNotify()"></alert>-->
+
         </div>
     </div>
     </body>
