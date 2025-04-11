@@ -1,35 +1,47 @@
-import json
-from django.http import JsonResponse, HttpResponse
-from django.views import View
 from .models import Product, Category
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+from django.http import HttpResponse
 
-class ProductListView(View):
-    def get(self, request):
-        products = list(Product.objects.values())
-        return JsonResponse(products, safe=False)
 
-class ProductDetailView(View):
-    def get(self, request, id):
-        try:
-            product = Product.objects.values().get(id=id)
-            return JsonResponse(product)
-        except Product.DoesNotExist:
-            return JsonResponse({'error': 'Product not found'}, status=404)
+def product_list(request):
+    products = Product.objects.all()
+    data = {'products': list(products.values())}
+    return JsonResponse(data)
 
-class CategoryListView(View):
-    def get(self, request):
-        categories = list(Category.objects.values())
-        return JsonResponse(categories, safe=False)
+def product_by_id(request, product_id):
+    product = get_object_or_404(Product,id=product_id)
+    data = {'product': {
+        'id': product.id,
+        'name': product.name,
+        'price': product.price,
+        'description': product.description,
+        'count': product.count,
+        'is_active': product.is_active,
+        'category_id': product.category.id,
+        'category_name': product.category.name,
+    }}
+    return JsonResponse(data)
 
-class CategoryDetailView(View):
-    def get(self, request, id):
-        try:
-            category = Category.objects.values().get(id=id)
-            return JsonResponse(category)
-        except Category.DoesNotExist:
-            return JsonResponse({'error': 'Category not found'}, status=404)
+def category_list(request):
+    category = Category.objects.all()
+    data = {'categories': list(category.values())}
+    return JsonResponse(data)
 
-class ProductsByCategoryView(View):
-    def get(self, request, id):
-        products = list(Product.objects.filter(category_id=id).values())
-        return JsonResponse(products, safe=False)
+def category_by_id(request, category_id):
+    category = get_object_or_404(Category,id=category_id)
+    data = {'category': {
+        "id": category.id,
+        "name":category.name,
+        "products_in_category": list(category.product_set.values('id','name'))
+    }}
+    return JsonResponse(data)
+
+def category_products(request, category_id):
+    category = get_object_or_404(Category,id=category_id)
+    products = category.product_set.all()
+    data = {'products': list(products.values())}
+    return JsonResponse(data)
+
+def index(request):
+    return HttpResponse("Okay, project is available")
